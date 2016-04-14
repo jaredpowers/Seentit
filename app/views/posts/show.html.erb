@@ -1,0 +1,16 @@
+<h1><%= @post.title %></h1>
+
+  <h3>Posted by: <%= @post.user.username unless @post.user.blank? %></h3>
+  <div class="post_body">
+    <a><%= @post.body %></a>
+  </div>
+
+  <div class="comments">
+    <h4><%= @post.comments.count %> Comments </h4>
+    <% @post.comments.each do |comment| %>
+      <p>Author: <%= comment.author %> </p>
+      <p> <%= comment.comment %> </p>
+    <% end %>
+  </div>
+
+</div>

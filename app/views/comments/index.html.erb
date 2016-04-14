@@ -1,0 +1,13 @@
+<h1>Comments</h1>
+
+<div class="comments">
+  <ul>
+    <% @comments.each do |t| %>
+      <li><%= comment.message %></li> </br>
+      <li><%= comment.author %></li>
+
+        <a href="/posts/<%= comment.post_id %>">show</a>
+
+    <% end %>
+  </ul>
+</div>

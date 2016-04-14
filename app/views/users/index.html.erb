@@ -1,0 +1,12 @@
+<h1>All Users</h1>
+
+<div>
+  <ol>
+    <% @users.each do |user| %>
+      <div class="user_box">
+         <a href="/users/<%= user.id %>" > Show this user's posts</a>
+         <p class="user_p"> Seentit User <%= user.username %> </p>
+      </div>
+    <% end %>
+ </ol>
+</div>

@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+  resources :users
+  resources :posts
+
+  get '/posts' => redirect('/posts/show')
+  post 'upvotes/:post_id', to: 'upvotes#create_upvote', as: 'upvote_button'
+  post 'downvotes/:post_id', to: 'downvotes#create_downvote', as: 'downvote_button'
+
+  resources :upvotes
+  resources :downvotes
+
+  root 'posts#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

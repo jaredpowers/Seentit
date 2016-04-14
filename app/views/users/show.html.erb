@@ -1,0 +1,21 @@
+<ul>
+
+  <p>User: <%= @user.username unless @user.blank? %> </p>
+    <% @posts.each do |post| %>
+      <%= link_to post.title, post_path(post) %>
+      <p></p>
+
+    <% end %>
+
+
+    </div>
+
+      <p>
+        <a href="/posts">Go to all posts</a>
+      </p>
+
+      <p>
+        <a href="/users">Go to all users</a>
+      </p>
+
+</ul>

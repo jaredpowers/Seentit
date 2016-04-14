@@ -1,0 +1,39 @@
+<h1>Seentit</h1>
+
+<p><a href="/posts/new"</a>Create New Post</p>
+
+<div>
+
+ <ul>
+ <% @posts.each do |post| %>
+  <li >
+    <div class="post_box">
+     <%= link_to post.title, post_path(post) %>
+     <p> Posted by: <%= post.user.username %> </p>
+
+
+      <div class="row post_box_bottom">
+        <div class="two columns vote_buttons">
+          <%= button_to 'UpVote', upvote_button_path(post.id),  method: :post, class: 'button'%>
+          <p class="scores">Total Votes: <%= post.score %></p>
+          <%= button_to 'DownVote', downvote_button_path(post.id),  method: :post, class: 'button'%>
+        </div>
+      </div>
+    </div>
+   </li>
+    <% end %>
+
+</ul>
+  <% if params[:page].to_i >= 0 %>
+    <p><%= link_to "next page", "/posts?page=#{params[:page].to_i + 1}" %></p>
+  <% end %>
+
+
+
+  <% if params[:page].to_i > 1 %>
+    <p><%= link_to "back page", "/posts?page=#{params[:page].to_i - 1}" %></p>
+  <% end %>
+
+
+
+</div>
