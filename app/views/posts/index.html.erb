@@ -13,7 +13,7 @@
 
 
       <div class="row post_box_bottom">
-        <div class="two columns vote_buttons">
+        <div class="vote_buttons">
           <%= button_to 'UpVote', upvote_button_path(post.id),  method: :post, class: 'button'%>
           <p class="scores">Total Votes: <%= post.score %></p>
           <%= button_to 'DownVote', downvote_button_path(post.id),  method: :post, class: 'button'%>

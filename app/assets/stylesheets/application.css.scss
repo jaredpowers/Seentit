@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "materialize";
+ @import "materialize/extras/nouislider";
+
+.navigation {
+  background-color: #3B3B3B;
+  height: 3em;
+  font-size: 1.5em;
+  padding-top: .8em;
+}
+
+.navbar-brand {
+  color: #AAAAAA;
+  margin: 1em 2em;
+}
+
+.container {
+  margin: .5em;
+  margin-bottom: 1em;
+  padding-left: .5em;
+  background-color: #3B3B3B;
+}
+
+h1 {
+  color: #131212;
+  padding-left: 1em;
+}
+
+form.button_to {
+  margin-bottom: .5em;
+}
+
+form input.button {
+  height: 3em;
+  padding: .1em 1em;
+  line-height: 3em;
+}
+.scores {
+  margin: 1.5em 1em;
+}
+
+.post_box {
+  background-color: #f5f9fb;
+  margin: 25px 0;
+  padding: 1em 1em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: 3px;
+}
+
+div.row.link_box_bottom {
+  margin-bottom: 0px;
+}
+
+div.user_box {
+  background-color: #f5f9fb;
+  margin: 20px 0;
+  padding: 1em 1em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: 3px;
+}
+
+.post_body {
+  margin: 25px 0;
+  padding: 1em 1em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+  border: 1px solid rgba(0, 0, 0, .05);
+}

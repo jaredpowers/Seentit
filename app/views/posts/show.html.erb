@@ -1,6 +1,6 @@
-<h1><%= @post.title %></h1>
+<h4><%= @post.title %></h4>
 
-  <h3>Posted by: <%= @post.user.username unless @post.user.blank? %></h3>
+  <h6>Posted by: <%= @post.user.username unless @post.user.blank? %></h6>
   <div class="post_body">
     <a><%= @post.body %></a>
   </div>
