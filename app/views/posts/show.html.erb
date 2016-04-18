@@ -5,6 +5,8 @@
     <a><%= @post.body %></a>
   </div>
 
+  <p><a href="/comments/new"</a>Create New Comment</p>
+
   <div class="comments">
     <h4><%= @post.comments.count %> Comments </h4>
     <% @post.comments.each do |comment| %>

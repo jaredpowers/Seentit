@@ -31,9 +31,9 @@
 }
 
 .container {
-  margin: .5em;
-  margin-bottom: 1em;
+  margin-left: .5em;
   padding-left: .5em;
+  padding-right: .5em;
   background-color: #3B3B3B;
 }
 
@@ -57,7 +57,7 @@ form input.button {
 
 .post_box {
   background-color: #f5f9fb;
-  margin: 25px 0;
+  margin: 2em 2em;
   padding: 1em 1em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
   border: 1px solid rgba(0, 0, 0, .05);
@@ -82,4 +82,10 @@ div.user_box {
   padding: 1em 1em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
   border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.site-title {
+  float: right;
+  margin-right: 2em;
+  margin-top: -.25em;
 }
